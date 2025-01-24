@@ -88,8 +88,8 @@ SELECT
 FROM
     green_taxi_trips
 WHERE
-    DATE(lpep_pickup_datetime) >= '2019-10-01'
-    AND DATE(lpep_pickup_datetime) < '2019-11-01';
+    lpep_pickup_datetime >= '2019-10-01'
+    AND lpep_pickup_datetime < '2019-11-01';
 ```
 
 
