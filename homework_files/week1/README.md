@@ -76,7 +76,9 @@ Answers:
 - 104,802;  198,924;  109,603;  27,678;  35,189
 - 104,793;  201,407;  110,612;  27,831;  35,281
 - 104,793;  202,661;  109,603;  27,678;  35,189
-- 104,838;  199,013;  109,645;  27,688;  35,202 -- this is the answer?
+- 104,838;  199,013;  109,645;  27,688;  35,202
+
+It's not clear if this question is asking for the number of trips between October 1st 2019 (inclusive) and November 1st 2019 (exclusive). I am assuming that's the case. 
 
 ``` SQl
 SELECT
@@ -89,7 +91,7 @@ FROM
     green_taxi_trips
 WHERE
     lpep_pickup_datetime >= '2019-10-01'
-    AND lpep_pickup_datetime < '2019-11-01';
+    AND lpep_dropoff_datetime < '2019-11-01';
 ```
 
 
